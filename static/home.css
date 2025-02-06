@@ -1,0 +1,22 @@
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 3px 3px 5px 5px #000000f0;
+}
+
+label{
+    margin: 0.3em;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+}

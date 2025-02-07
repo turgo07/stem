@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="text" id="cpf" placeholder="CPF (apenas números)" oninput="validarCPF()">
+        <span id="cpfErro" class="erro"></span>
+        <input type="date" id="dataNascimento" placeholder="Data de Nascimento" oninput="validarDataNascimento()">
+        <span id="dataErro" class="erro"></span>
+        <input type="password" id="senha" placeholder="Senha" oninput="validarSenha()">
+        <ul id="checklist">
+            <li id="min8">❌ Mínimo de 8 caracteres</li>
+            <li id="maiuscula">❌ Pelo menos 1 letra maiúscula</li>
+            <li id="minuscula">❌ Pelo menos 1 letra minúscula</li>
+            <li id="numero">❌ Pelo menos 1 número</li>
+            <li id="especial">❌ Pelo menos 1 caractere especial</li>
+            <li id="max20">❌ Tamanho máximo de 20 caracteres</li>
+            <li id="espacos">❌ Não pode conter espaços</li>
+            <li id="repeticoes">❌ Sem repetições excessivas</li>
+            <li id="sequencias">❌ Sem sequência numérica ou alfabética</li>
+            <li id="cpfNaSenha">❌ Senha não pode conter CPF</li>
+            <li id="dataNaSenha">❌ Senha não pode conter Data de Nascimento</li>
+        </ul>
+        <button id="botaoEntrar" onclick="login()" disabled>Entrar</button>
+        <p id="mensagem"></p>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
